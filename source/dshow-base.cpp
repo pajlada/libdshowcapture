@@ -487,7 +487,7 @@ wstring ConvertHRToEnglish(HRESULT hr)
 			FORMAT_MESSAGE_ALLOCATE_BUFFER |
 			FORMAT_MESSAGE_IGNORE_INSERTS,
 			NULL, hr, MAKELANGID(LANG_ENGLISH, SUBLANG_ENGLISH_US),
-			(LPTSTR)&buffer, 0, NULL);
+			(LPWSTR)&buffer, 0, NULL);
 
 	if (buffer) {
 		str = buffer;
